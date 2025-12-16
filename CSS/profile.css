@@ -1,0 +1,254 @@
+/*Faculty Personal Profile*/
+body {
+    background-color: #d2e5fa;
+}
+
+#faculty-image-bio img{
+	margin-top: 10px;
+	width: 100%; height: 270px; object-fit: fill;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#faculty-image-bio p{
+	margin-top: -6px;
+}
+#faculty-image-bio span{
+	margin-left: 5px;
+}
+
+#faculty-details .nav a{
+	font-family: 'Montserrat', sans-serif;
+	color: #364697;
+	font-size: 1em;
+}
+
+
+/*Academic Experience details*/
+#nav-tabContent .faculty-attributes div{
+
+	margin-top: 30px;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+	border-radius: 10px;
+	padding-bottom: 2px;
+	padding-left: 5px;
+	padding-right: 2px;
+	
+}
+#nav-tabContent .faculty-attributes p{
+	margin-top: -6px;
+}
+
+#nav-tabContent .faculty-attributes h4{
+	color: #364697;
+}
+
+#nav-tabContent .faculty-attributes h3{
+	color: #000000;
+}
+
+
+#faculty-publication div{
+	background-color: #fdfdfd;
+	/* padding-top: 25px; */
+	padding-bottom: 15px;
+}
+
+.fixed-sidebar {
+	position: fixed;
+	width: calc(200px + 5vw);
+}
+
+
+@media (max-width: 992px){
+	.fixed-sidebar{
+		position: static;
+		width: 100%;
+		height: 100%;
+	}
+
+	#faculty-image-bio .fixed-sidebar img{
+		width: calc(200px + 10vw);
+	}
+}
+
+
+@media (min-width: 992px){
+	.fixed-sidebar{
+		position: fixed;
+		width: calc(200px + 3vw);
+	}
+
+	#faculty-image-bio .fixed-sidebar img{
+		width: 100%;
+	}
+}
+.fixed-sidebar {
+    width: 250px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.fixed-sidebar .profile-photo {
+    width: 100%;
+    height: 250px;       /* fixed height */
+    margin-bottom: 15px;
+    border-radius: 50%;
+    background-color: #ddd; /* gray placeholder background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.fixed-sidebar .profile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* ensure image fills the circle */
+}
+
+.fixed-sidebar .profile-photo i {
+    color: #888;
+}
+.skills-section {
+    background: #fff;
+    border: 1px solid #E5E7EB;
+    border-radius: 10px;
+    padding: 25px 30px;
+    margin-top: 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.04);
+  }
+
+  .skills-header {
+    background: #DCECFD;
+    border-left: 6px solid #2563EB;
+    border-radius: 8px 8px 0 0;
+    padding: 12px 18px;
+    margin: 20px;
+  }
+
+  .skills-header h3 {
+    color: #1E3A8A;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 30px;
+  }
+
+  .skill-badge {
+    background: #DCECFD;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 14px;
+    color: #1E3A8A;
+    font-weight: 500;
+    cursor: default;
+    transition: all 0.3s ease;
+  }
+
+  .skill-badge:hover {
+    background: #2563EB;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 3px 6px rgba(37, 99, 235, 0.2);
+  }
+  .nav-edit:hover {
+    background-color: #1D4ED8; /* slightly darker blue on hover */
+    transform: translateY(-2px); /* subtle lift effect */
+}
+.skill-badge {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 3px;
+    border-radius: 5px;
+    background: #DCECFD;
+    color: #2563EB;
+    font-weight: 500;
+}
+/* Nav-end edit icon */
+.nav-edit {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #2563EB;
+}
+body {
+        background-color: #F8FAFC;
+        font-family: 'Inter', sans-serif;
+    }
+    .card {
+        border-radius: 10px;
+        border: 1px solid #DCECFD;
+        box-shadow: 0 4px 10px rgba(37, 99, 235, 0.1);
+        background: #fff;
+    }
+    .card-header {
+        background-color: #DCECFD;
+        color: #2563EB;
+        font-weight: 600;
+        font-size: 1.1rem;
+        border-bottom: 2px solid #2563EB;
+    }
+    .btn-primary-custom {
+        background-color: #2563EB;
+        border-color: #2563EB;
+        color: white;
+    }
+    .btn-primary-custom:hover {
+        background-color: #1E40AF;
+    }
+    .profile-photo-container {
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .form-section-title {
+        color: #2563EB;
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 8px;
+    }
+    .action-btn {margin-left:5px;}
+    .nav-edit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px 15px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: #2563EB;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: auto; /* large screens: right side */
+    margin-top: 0; /* default */
+    order: 0; /* large screens: after tabs */
+}
+
+/* Mobile / small screens */
+@media (max-width: 768px) {
+    .profile-nav-container {
+        flex-direction: column; /* vertical stacking */
+        align-items: stretch;
+    }
+    .nav-edit {
+        margin-left: 0;
+        margin-bottom: 10px; /* thoda gap */
+        order: -1; /* button top */
+    }
+}

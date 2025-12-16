@@ -1,0 +1,45 @@
+/* Card hover effect */
+.job-card, .resource-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+}
+
+.job-card:hover, .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+/* Section Titles */
+.section-title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+/* Badges */
+.badge {
+    font-size: 0.75rem;
+    padding: 0.35em 0.55em;
+}
+
+/* Buttons */
+.btn-sm {
+    border-radius: 6px;
+    font-size: 0.8rem;
+}
+
+/* Equal height rows */
+.equal-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.equal-row > [class*="col-"] {
+    display: flex;
+}
+.equal-row > [class*="col-"] > .card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
